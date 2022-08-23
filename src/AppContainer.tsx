@@ -28,7 +28,7 @@ export const AppContainer: FC = () => {
 
     return <>
         <div style={style}>
-            <button style={btnStyle} onClick={callFoo}>Click me =)</button>
+            <button data-test="clickMeBtn" style={btnStyle} onClick={callFoo}>Click me =)</button>
         </div>
         <Routes>
             <Route path='/foo' element={<FooPopup close={close}/>}/>

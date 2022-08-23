@@ -11,7 +11,7 @@ interface IProps {
 
 export const BarPopup:FC<IProps> = (props) => {
     const {onClick} = usePresenter()
-    return <PopupLayout close={props.close}>
+    return <PopupLayout close={props.close} dataTest="barPopup">
         <ModalCard close={props.close} header="BAR Popups">
             <>
                 <button onClick={onClick}>add Foo popup</button>
